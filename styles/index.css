@@ -1,0 +1,9 @@
+.indexMain {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.currentTimeSection div {
+  font-size: 60px;
+}
