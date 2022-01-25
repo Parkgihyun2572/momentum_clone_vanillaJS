@@ -3,65 +3,78 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
         <title>Momentum Clone | Index Page</title>
         <link rel="stylesheet" href="styles/style.css">
     </head>
 
     <body>
-        <header>
+
+        <div id="wrap">
+
+            <header>
             
-            <section class="currentWeatherSection">
+                <section class="currentWeatherSection">
+    
+                </section>
+    
+            </header>
+    
+            <main class="indexMain">
+    
+                <section class="currentTimeSection">
+                    <div><b></b></div>
+                </section>
+    
+                <section class="currentUserSection">
+    
+                    <div class="currentUserInput">
+                        <form>
+                            <label for="name">What's your name?</label>
+                            <input type="text" name="user">
+                        </form>
+                    </div>
+    
+                    <div class="welcomeUser hidden" >
+                        <p></p>
+                    </div>
+    
+                </section>
+    
+                <section class="toDoListSection">
+                    
+                    <div class="toDoListInput">
+                        <form>
+                            <label for="toDo">What is your main focus for today?</label>
+                            <input type="text" name="toDo">
+                        </form>
+                    </div>
 
-            </section>
+                </section>
+    
+            </main>
+    
+            <footer>
+    
+                <section class="bgLocationSection">
+    
+                </section>
+    
+                <section class="randomQuoteSection">
+    
+                </section>
+    
+                <section class="currentToDoListSection">
+    
+                </section>
+    
+            </footer>
 
-        </header>
-
-        <main class="indexMain">
-
-            <section class="currentTimeSection">
-                <div><b></b></div>
-            </section>
-
-            <section class="currentUserSection">
-
-                <div class="currentUserInput">
-                    <form>
-                        <label for="name">What's your name?</label>
-                        <input type="text" name="user">
-                    </form>
-                </div>
-
-                <div class="welcomeUser hidden" >
-                    <p></p>
-                </div>
-
-            </section>
-
-            <section class="toDoListSection">
-
-            </section>
-
-        </main>
-
-        <footer>
-
-            <section class="bgLocationSection">
-
-            </section>
-
-            <section class="randomQuoteSection">
-
-            </section>
-
-            <section class="currentToDoListSection">
-
-            </section>
-
-        </footer>
+        </div>
         
         <script src="src/clock.js"></script>
         <script src="src/greeting.js"></script>
+        <script src="src/randomBg.js"></script>
 
     </body>
 </html>

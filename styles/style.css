@@ -4,3 +4,38 @@
 .hidden {
   display: none;
 }
+
+body {
+  background-color: gray;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100wh;
+  height: 35%;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100wh;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}

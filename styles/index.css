@@ -1,31 +1,45 @@
-.indexMain {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
 .currentTimeSection div {
-  font-size: 120px;
+  font-size: 150px;
+  color: white;
+  width: 100vw;
 }
 
 .currentUserSection {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: white;
 }
 
 .currentUserInput form {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  font-size: 40px;
+  font-size: 2em;
 }
 
 .currentUserInput form input {
   border: none;
   outline: none;
-  border-bottom: black 2px solid;
-  font-size: 40px;
+  border-bottom: white 2px solid;
+  font-size: 2em;
 }
 
 .welcomeUser {
-  font-size: 30px;
+  font-size: 3em;
+}
+
+.toDoListSection {
+  font-size: 2em;
+  color: white;
+}
+
+.toDoListInput Form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.toDoListInput Form input {
+  border-bottom: white 2px solid;
+  font-size: 2em;
 }
