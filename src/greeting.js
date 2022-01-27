@@ -1,7 +1,12 @@
 const welcomeUserSection = document.querySelector(".welcomeUser");
 const welcomeUser = document.querySelector(".welcomeUser p");
+const toDoListSection = document.querySelector(".toDoListSection");
+const currentUserInputSection = document.querySelector(".currentUserInput");
+const currentUserForm = document.querySelector(".currentUserInput form");
+const currentUserInput = document.querySelector(".currentUserInput form input");
 
 const CURRENT_USER = "currentUser";
+const CLASSNAME_HIDDEN = "hidden";
 
 function userSectionHandler(event) {
     event.preventDefault();
@@ -18,8 +23,9 @@ function receiveUsername() {
 function showCurrentUser() {
     currentUser = localStorage.getItem(CURRENT_USER);
     welcomeUser.innerText = `Good Day! ${currentUser}`;
-    currentUserInputSection.classList.toggle("hidden");
-    welcomeUserSection.classList.toggle("hidden");
+    currentUserInputSection.classList.toggle(CLASSNAME_HIDDEN);
+    welcomeUserSection.classList.toggle(CLASSNAME_HIDDEN);
+    toDoListSection.classList.toggle(CLASSNAME_HIDDEN);
 }
 
 function checkCurrentUser() {

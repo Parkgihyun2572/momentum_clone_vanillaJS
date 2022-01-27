@@ -2,6 +2,9 @@
   font-size: 150px;
   color: white;
   width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .currentUserSection {
@@ -21,7 +24,9 @@
   border: none;
   outline: none;
   border-bottom: white 2px solid;
-  font-size: 2em;
+  font-size: 1em;
+  color: white;
+  text-align: center;
 }
 
 .welcomeUser {
@@ -41,5 +46,7 @@
 
 .toDoListInput Form input {
   border-bottom: white 2px solid;
-  font-size: 2em;
+  font-size: 1em;
+  color: white;
+  text-align: center;
 }

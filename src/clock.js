@@ -1,7 +1,4 @@
 const currentTimeSection = document.querySelector(".currentTimeSection div b");
-const currentUserInputSection = document.querySelector(".currentUserInput");
-const currentUserForm = document.querySelector(".currentUserInput form");
-const currentUserInput = document.querySelector(".currentUserInput form input");
 
 function timeHandler() {
     const currentTime = new Date();
