@@ -1,3 +1,16 @@
+.currentWeatherSection {
+  display: flex;
+  flex-flow: row nowrap;
+  color: white;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 10px 0px 0px;
+}
+
+.currentWeatherSection span:last-child {
+  margin-left: 10px;
+}
+
 .currentTimeSection div {
   font-size: 150px;
   color: white;
