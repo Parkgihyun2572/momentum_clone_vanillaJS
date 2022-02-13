@@ -2,15 +2,23 @@ const currentToDoInput = document.querySelector(".toDoListInput form input");
 const currentToDoForm = document.querySelector(".toDoListInput form");
 
 const CURRENT_TODO = "currentToDo";
+const MAINFOCUS = "mainFocus";
 
 function toDoSectionHandler(event) {
     event.preventDefault();
     const currentToDoValue = currentToDoInput.value;
     document.querySelector(".toDoListInput form input").value = "";
-    console.log(currentToDoValue);
+    localStorage.setItem(MAINFOCUS, currentToDoValue);
+    showToDo();
+};
+
+function showToDo() {
+    const currentToDo = localStorage.getItem(CURRENT_TODO);
+    const div = document.createElement("div");
+    // const showToDoDiv = div.
 }
 
-function receiveToDo(event) {
+function receiveToDo() {
     currentToDoForm.addEventListener("submit", toDoSectionHandler);
 };
 
